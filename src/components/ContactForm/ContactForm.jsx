@@ -6,7 +6,7 @@ import { Wrapper, Input, Label, Button } from './ContactForm.styled';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(state => state.contacts);
+  const contacts = useSelector(state => state.contacts.items);
 
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
